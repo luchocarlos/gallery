@@ -1,0 +1,164 @@
+header{
+    text-align: center;
+}
+
+.imgprofile{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.name{
+    font-family: monospace;
+    font-size: 29px;
+    color:rgb(70, 69, 69);
+    margin-top: 0px;
+}
+
+
+.city{
+    font-family: monospace;
+    color: rgb(128, 126, 126);
+    margin-top: -20px; 
+    font-size: 17px;
+}
+
+.data{
+    padding-left: 38%;      
+    width: 25%;
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+    height: 60px;
+    width: 80px;
+    background: rgba(212, 206, 206, 0.623); 
+    border-radius: 10px; 
+}
+
+.number{
+    color: rgb(128, 126, 126);
+    font-size: 18px;
+}
+
+.type{
+    color:rgba(187, 184, 184, 0.623);
+    margin-top: -12px;
+    font-size: 14px;
+}
+
+.gallery{  
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px; 
+}
+
+
+.photo1, .photo5, .photo6{
+    width: 300px;
+    height: 300px;
+}
+
+.photo2, .photo3{
+    width: 630px;
+    height: 300px;
+}
+
+.photo4{
+    height: 630px;
+    width: 300px;
+}
+
+
+img{
+    border-radius: 10px;
+}
+
+.columna_1{
+    display:flex;
+    grid-gap: 20px;
+}
+
+.columna_2{
+    display:grid;
+    grid-gap: 20px;
+}
+
+.columna_2 :nth-child(3){
+    margin-left: -475px;
+}
+
+.columna_larga{
+    margin-left: -320px;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 20px;
+}
+
+.gallery :nth-child(1){
+    grid-column-end: 1;   
+}
+
+.gallery :nth-child(2){
+    grid-column-end: 1;   
+}
+
+.gallery :nth-child(3){
+    grid-column-end: 2;   
+}
+
+footer{
+    color: rgb(102, 101, 101);
+    text-align: center;
+    padding: 70px;
+    clear: both;
+}
+
+
+@media (max-width: 768px){
+
+    .data{
+        padding-left: 50px;
+        height: 75px;
+
+        grid-gap: 10px;
+    }
+    
+    .gallery{
+        padding: 0;
+         grid-gap: 10px;
+    }
+   
+    .photo1, .photo5, .photo6{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .photo2, .photo3{
+        width: 230px;
+        height: 110px;
+    }
+    
+    .photo4{
+        height: 240px;
+        width: 110px;
+    }
+
+    .columna_2 :nth-child(3){
+        margin-left: -190px;
+    }
+
+
+    .columna_larga{
+        margin-left: -130px;
+    }
+
+}
